@@ -1,0 +1,13 @@
+[gdexample]
+source_dir = "src"
+cpp_bindings = "godot-cpp"
+project_dir = "game"
+bin_dir = "bin"
+sources = "src/*.cpp"
+
+[gdexample.compiler]
+standard = "c++17"
+include_paths = ["godot-cpp/include", "godot-cpp/include/core", "godot-cpp/include/gen"]
+
+[gdexample.bindings]
+GDExample = "Sprite"

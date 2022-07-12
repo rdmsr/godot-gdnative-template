@@ -1,0 +1,5 @@
+*.os
+*.so
+x11
+.import
+*.dblite
