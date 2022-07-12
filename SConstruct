@@ -65,7 +65,7 @@ def gen_bindings(sources):
     for binding in config[proj_name]["bindings"]:
         file = os.path.join(base_dir, bin_dir, binding.lower() + ".gdns")
         with open(file, "w") as f:
-            f.write(GDNS_STRING.format(bin_dir, proj_name, binding, binding.lower()))
+            f.write(GDNS_STRING.format(bin_dir, proj_name, binding.lower(), binding))
     
     headers = Glob(source_dir + "/*.hpp")
     include_str = ""
